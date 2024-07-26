@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Wheel from './Wheel'; // Your Wheel component
+import Modal from './Modal';
+import './App.css'; // Include your styles
 
-function App() {
+const App = () => {
+  const [isModalVisible, setIsModalVisible] = useState(true);
+  const [userNumber, setUserNumber] = useState(null);
+
+  const handleModalSubmit = (number) => {
+    setUserNumber(number);
+    setIsModalVisible(false);
+  };
+
+  const handleModalClose = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isModalVisible && (
+        <Modal
+          isVisible={isModalVisible}
+          onClose={handleModalClose}
+          onSubmit={handleModalSubmit}
+        />
+      )}
+      {!isModalVisible && (
+        <div>
+      <h1>Let's Get Ready to Gamble!</h1>
+      <h2> V </h2>
+        <Wheel userNumber={userNumber}/>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default App;
+
