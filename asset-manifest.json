@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/NEUDitao.github.io/gambling/static/css/main.90f06052.css",
-    "main.js": "/NEUDitao.github.io/gambling/static/js/main.a4ec1654.js",
-    "static/js/453.2d78c0bd.chunk.js": "/NEUDitao.github.io/gambling/static/js/453.2d78c0bd.chunk.js",
-    "static/media/IMG_8598.MOV": "/NEUDitao.github.io/gambling/static/media/IMG_8598.46760ff919837648e9fc.MOV",
-    "index.html": "/NEUDitao.github.io/gambling/index.html",
-    "main.90f06052.css.map": "/NEUDitao.github.io/gambling/static/css/main.90f06052.css.map",
-    "main.a4ec1654.js.map": "/NEUDitao.github.io/gambling/static/js/main.a4ec1654.js.map",
-    "453.2d78c0bd.chunk.js.map": "/NEUDitao.github.io/gambling/static/js/453.2d78c0bd.chunk.js.map"
+    "main.css": "/gambling/static/css/main.90f06052.css",
+    "main.js": "/gambling/static/js/main.8a752e61.js",
+    "static/js/453.2d78c0bd.chunk.js": "/gambling/static/js/453.2d78c0bd.chunk.js",
+    "static/media/IMG_8598.MOV": "/gambling/static/media/IMG_8598.46760ff919837648e9fc.MOV",
+    "index.html": "/gambling/index.html",
+    "main.90f06052.css.map": "/gambling/static/css/main.90f06052.css.map",
+    "main.8a752e61.js.map": "/gambling/static/js/main.8a752e61.js.map",
+    "453.2d78c0bd.chunk.js.map": "/gambling/static/js/453.2d78c0bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90f06052.css",
-    "static/js/main.a4ec1654.js"
+    "static/js/main.8a752e61.js"
   ]
 }
