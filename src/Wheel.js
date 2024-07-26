@@ -101,8 +101,7 @@ const Wheel = ({userNumber}) => {
     const segmentAngle = 360 / segments.length;
     const adjustedAngle = (360 - (finalAngle % 360)) % 360;
     const index = Math.floor(adjustedAngle / segmentAngle);
-    // setSelectedPrize(segments[index]);
-    setSelectedPrize("MEGA WIN");
+    setSelectedPrize(segments[index]);
     setShowModal(true); // Show the modal with the selected prize
   };
 
