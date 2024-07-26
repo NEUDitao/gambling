@@ -2,7 +2,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import PrizeModal from './PrizeModal'; // Import the PrizeModal component
 
-
 const Wheel = ({userNumber}) => {
   const canvasRef = useRef(null);
   const [isSpinning, setIsSpinning] = useState(false);
@@ -101,8 +100,15 @@ const Wheel = ({userNumber}) => {
     const segmentAngle = 360 / segments.length;
     const adjustedAngle = (360 - (finalAngle % 360)) % 360;
     const index = Math.floor(adjustedAngle / segmentAngle);
-    setSelectedPrize(segments[index]);
+    let selectedPrize = segments[index];
+    setSelectedPrize(selectedPrize);
     setShowModal(true); // Show the modal with the selected prize
+
+    if (selectedPrize == "WIN") {
+      setWinnings(w => w + userNumber);
+    } else {
+      setWinnings(w => w - userNumber);
+    }
   };
 
   useEffect(() => {
@@ -113,12 +119,17 @@ const Wheel = ({userNumber}) => {
     setShowModal(false);
   };
 
+  const windowWidth = window.innerWidth - 20;
+  const width = Math.min(windowWidth, 500); 
+
+  const [winnings, setWinnings] = useState(0);
 
   return (
     <div>
-      <canvas ref={canvasRef} width="500" height="500" style={{ border: '1px solid #000' }} />
+      <canvas ref={canvasRef} width={width} height={width} style={{ border: '1px solid #000', maxWidth:"98%", maxHeight:"98%" }} />
       <br/>
       <button onClick={spinWheel} disabled={isSpinning}>Spin</button>
+      <p>Overall winnings: {winnings}</p>
       {showModal && (
         <PrizeModal prize={selectedPrize} userNumber={userNumber} onClose={closeModal} />
       )}

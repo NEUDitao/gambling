@@ -28,8 +28,9 @@ const App = () => {
       {!isModalVisible && (
         <div>
       <h1>Let's Get Ready to Gamble!</h1>
-      <h2> V </h2>
-        <Wheel userNumber={userNumber}/>
+          <h2> V </h2>
+        <Wheel 
+            userNumber={userNumber}/>
         </div>
       )}
     </div>

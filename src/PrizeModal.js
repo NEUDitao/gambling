@@ -5,7 +5,7 @@ import vid from './IMG_8598.MOV';
 
 const PrizeModal = ({ prize, userNumber, onClose }) => {
   if (!prize) return null;
-
+  
   if (prize == "WIN") {
   return (
     <div className="modal-overlay">
@@ -42,6 +42,7 @@ const PrizeModal = ({ prize, userNumber, onClose }) => {
     <source src={vid} type="video/mp4"/>
     Your browser does not support the video tag.
 </video>
+          <p>(however, you lose some money...)</p>
           <br/>
 
         <button onClick={onClose}>Close</button>
