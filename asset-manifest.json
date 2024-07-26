@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gambling/static/css/main.90f06052.css",
-    "main.js": "/gambling/static/js/main.b6bdee81.js",
+    "main.css": "/gambling/static/css/main.691c3211.css",
+    "main.js": "/gambling/static/js/main.21669f8e.js",
     "static/js/453.2d78c0bd.chunk.js": "/gambling/static/js/453.2d78c0bd.chunk.js",
     "static/media/IMG_8598.MOV": "/gambling/static/media/IMG_8598.46760ff919837648e9fc.MOV",
     "index.html": "/gambling/index.html",
-    "main.90f06052.css.map": "/gambling/static/css/main.90f06052.css.map",
-    "main.b6bdee81.js.map": "/gambling/static/js/main.b6bdee81.js.map",
+    "main.691c3211.css.map": "/gambling/static/css/main.691c3211.css.map",
+    "main.21669f8e.js.map": "/gambling/static/js/main.21669f8e.js.map",
     "453.2d78c0bd.chunk.js.map": "/gambling/static/js/453.2d78c0bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f06052.css",
-    "static/js/main.b6bdee81.js"
+    "static/css/main.691c3211.css",
+    "static/js/main.21669f8e.js"
   ]
 }
