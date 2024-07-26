@@ -12,6 +12,7 @@ const PrizeModal = ({ prize, userNumber, onClose }) => {
       <div className="modal-content">
         <h2>Congratulations!</h2>
         <p>You would've won: {userNumber} (if we were in Vegas)</p>
+          {userNumber < 400 && (<p>(You definitely could've bet more though...)</p>)}
         <button onClick={onClose}>Close</button>
       </div>
     </div>
